@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" class="css">
+    <title>Calculator</title>
+</head>
+
+<body>
+    <div class="container">
+            <input id="result" type="text" class="result" name="result" value="0">
+        <div class="buttons">
+            <div class="three-btn1">
+                <input type="button" id="ac" value="AC" class="btn">
+                <input type="button" id="del" value="DEL" class="btn" onclick="deleteLast(value)">
+                <input type="button" id="add" value="+" class="btn" onclick="display('+')">
+            </div>
+            <div class="four-btn">
+                <input type="button" id="one" value="1" class="btn" onclick="display('1')">
+                <input type="button" id="two" value="2" class="btn" onclick="display('2')">
+                <input type="button" id="three" value="3" class="btn" onclick="display('3')">
+                <input type="button" id="multiply" value="*" class="btn" onclick="display('*')">
+            </div>
+            <div class="four-btn">
+                <input type="button" id="four"  value="4" class="btn" onclick="display('4')">
+                <input type="button" id="five"  value="5" class="btn" onclick="display('5')">
+                <input type="button" id="six" value="6" class="btn" onclick="display('6')">
+                <input type="button" id="divide" value="/" class="btn" onclick="display('/')">
+            </div>
+            <div class="four-btn">
+                <input type="button" id="seven"  value="7" class="btn" onclick="display('7')">
+                <input type="button" id="eight"  value="8" class="btn" onclick="display('8')">
+                <input type="button" id="six" value="9" class="btn" onclick="display('9')">
+                <input type="button" id="minus" value="-" class="btn" onclick="display('-')">
+            </div>
+            <div class="three-btn2">
+                <input type="button" id="decimal"  value="." class="btn" onclick="display('.')">
+                <input type="button" id="zero"  value="0" class="btn" onclick="display('0')">
+                <input type="button" id="equal" value="=" class="btn" onclick="calculate()">
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
